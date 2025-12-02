@@ -1,0 +1,63 @@
+/* Container for the entire bar */
+.contact-bar-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;
+  padding: 20px 0; /* Add some vertical space */
+  width: 100%;
+  background-color: white; /* Match the background of the image */
+}
+
+/* Base style for all buttons/links */
+.contact-button {
+  display: flex;
+  align-items: center;
+  /* Basic styling to resemble the image text */
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px;
+  margin: 0 15px; /* Space between buttons */
+  cursor: pointer;
+  
+  /* Reset link color inheritance */
+  color: inherit; 
+}
+
+/* Icon styling */
+.button-icon {
+  font-size: 20px; /* Slightly larger icon */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* --- Specific Button Styling --- */
+
+/* ENQUIRE NOW - Orange/Reddish Color */
+.enquire-now {
+  color: #ff6600; /* A shade of orange/red similar to the image */
+}
+.enquire-now .button-icon {
+  color: #ff6600; 
+}
+
+/* CONTACT US - Green Color */
+.contact-us {
+  color: #4CAF50; /* Standard green color */
+}
+.contact-us .button-icon {
+  color: #4CAF50;
+}
+
+/* CHAT IN WHATSAPP - WhatsApp Green Color */
+.whatsapp-chat {
+  color: #4CAF50; /* Same green as CONTACT US or standard WhatsApp green */
+}
+.whatsapp-chat .button-icon {
+  color: #4CAF50;
+}
+
+/* Optional: Add hover effect for better user experience */
+.contact-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
